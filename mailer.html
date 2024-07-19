@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailer final</title>
+<link rel="stylesheet" href="mailer.css">
+</head>
+
+<body>
+    <div class="shower" id="shower">
+Message us!
+    </div>
+    <div class="main" id="mailer">
+<br>
+<span>WebDevModern</span>
+
+<form action="https://api.web3forms.com/submit" method="post" class="formemail">
+    <input type="hidden" name="access_key" value="6c3b8ad7-3f85-4b64-8404-fbab7c59e093">
+<label for="email" class="maillabel">Enter your email address here</label>
+
+<input type="email" name="email" id="mail" class="mailinput" required style="background-color: rgb(110, 96, 240);">
+
+<label for="email" class="namelabel">Enter your message here:</label>
+
+<textarea name="text" id="txt" cols="30" rows="10" class="messagetextarea"></textarea>
+
+<input type="submit" value="Submit" class="submitinput">
+
+</form>
+
+<button id="closer" class="closerbutton">X</button>
+<script src="mailer.js"></script>
+    </div>
+</body>
+</html>

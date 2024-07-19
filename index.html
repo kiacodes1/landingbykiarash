@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiarash  - Portfolio</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="mailer.css">
+</head>
+<body>
+    <header >
+        <div class="container">
+            <div id="branding">
+                <h1>Kiarash </h1>
+                <img src="linkedin.jpeg" alt="Profile Picture" class="profile-pic">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section id="about" class="section">
+            <div style="text-align: center;">            <h1>About Me</h1></div>
+    
+        <br><br>
+            <div class="typing" id="skills-typing">
+                <h1 id="digital" style=" margin-left: 2rem;" >Your Partner in Digital Success</h1>
+            </div>
+            <br><br><br>
+            <!-- <div class="typing" id="skills-typing" style="color: red;">
+                • Programming: Python, MQL5, Git, NodeJS
+            </div> -->
+            <!-- <br><br><br>
+            <div class="typing" id="skills-typing" style="color: rgb(3, 107, 22);">
+                • Data Analysis: Applied Mathematics, Statistics, Data Visualization
+            </div>
+            <br><br><br>
+            <div class="typing" id="skills-typing" style="color: blue;">
+                • Design of: Lead generation systems, sales funnels, CRM bots
+            </div> --> 
+     
+        </section>
+        
+        <section id="projects" class="section">
+            <div style="text-align: center;"><h2>Projects</h2></div>
+            <div class="slideshow-container">
+                <!-- Slides -->
+                <div class="mySlides fade">
+                    <a href="https://webdevmodern.com"><img src="Screen Shot 2024-07-18 at 11.27.52 PM.png" alt="Slide 1"></a>
+                </div>
+                <div class="mySlides fade">
+                    <img src="Screen Shot 2024-07-18 at 11.28.14 PM.png" alt="Slide 2">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Screen Shot 2024-07-18 at 11.26.22 PM.png" alt="Slide 3">
+                </div>
+        
+                <!-- Navigation controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+         
+        </section>
+        
+        
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="Screen Shot 2024-07-19 at 2.13.25 AM.png" alt="Image 1">
+                    <br>
+                    <h2>Skill 1</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="Screen Shot 2024-07-19 at 2.13.41 AM.png" alt="Image 2">
+                    <br>
+                    <h2>Skill 2</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="Screen Shot 2024-07-19 at 2.13.56 AM.png" alt="Image 3">
+                    <br>
+                    <h2>Skill 3</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="Screen Shot 2024-07-19 at 2.17.08 AM.png" alt="Image 4">
+                    <br>
+                    <h2>Skill 3</h2>
+                </div>
+           
+            </div>
+        
+            
+        </section>
+        
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <img src="Screen Shot 2024-07-18 at 9.28.11 PM.png" alt="Education Image">
+            <p><strong>Simon Fraser University</strong> - BBA in (Accounting & Statistics) (2022-2026)</p>
+            <p><strong>KNTU</strong> - BSC in Applied Chemistry (2020-2022)</p>
+        </section>
+        
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <div class="typing" id="skills-typing" >
+                <h2 id="touchbutton" >Get in touch</h2>
+            </div>
+            
+             <a href="mailto:kiarashcsh1@gmail.com"><button class="contacter">Email</button></a>
+            <a href="https://linkedin.com/in/kiarash-chaleshi" target="_blank"><button class="contacter">LinkedIn</button></a>
+            <a href="https://webdevmodern.com" target="_blank"><button class="contacter">Portfolio</button></a>
+        
+        </section>
+    </div>
+    <div class="shower" id="shower">
+        Message me!
+            </div>
+            <div class="main" id="mailer">
+        <br>
+        <span>WebDevModern</span>
+        
+        <form action="https://api.web3forms.com/submit" method="post" class="formemail">
+            <input type="hidden" name="access_key" value="6c3b8ad7-3f85-4b64-8404-fbab7c59e093">
+        <label for="email" class="maillabel">Enter your email address here</label>
+        
+        <input type="email" name="email" id="mail" class="mailinput" required style="background-color: rgb(110, 96, 240);">
+        
+        <label for="email" class="namelabel">Enter your message here:</label>
+        
+        <textarea name="text" id="txt" cols="30" rows="10" class="messagetextarea"></textarea>
+        
+        <input type="submit" value="Submit" class="submitinput">
+        
+        </form>
+        
+        <button id="closer" class="closerbutton">X</button>
+        <script src="mailer.js"></script>
+            </div>
+    <footer>
+        <p>&copy; 2024 Kiarash webdevmodern</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

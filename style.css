@@ -1,0 +1,288 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+    background-image: url(pexels-eberhardgross-3389613.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+   
+}
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+header {
+
+    background-image: url("pexels-felixmittermeier-956981.jpg");
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+header .profile-pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+header ul {
+    padding: 0;
+    list-style: none;
+}
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #branding {
+    float: left;
+}
+header #branding h1 {
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+#main {
+    padding: 20px;
+    background: #fff;
+    margin-top: 20px;
+}
+#main h1 {
+    margin-top: 0;
+}
+.section {
+ 
+    min-height: 30rem;
+    min-width: 50%;
+   ;
+    padding: 20px;
+    margin-top: 20px;
+
+    color: white;
+  
+ 
+    background: #000000;
+    border-radius: 2rem;
+    background-image: url(pexels-felixmittermeier-956981.jpg);
+    /* background: linear-gradient(to bottom, #000000 0%, #000000 100%); */
+    
+}
+#about{
+    background-image: url('pexels-felixmittermeier-956981.jpg');
+    overflow: scroll;
+
+
+}
+#skills-typing{
+    z-index: 1000;
+}
+
+#skills{
+    text-align: center;
+}
+#education{
+    text-align: center;
+}
+#contact{
+    text-align: center;
+}
+
+
+.section img {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form input[type="submit"] {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.typing {
+    border-right: .15em solid #ffffff00;
+    white-space: nowrap;
+    font-size: 16pt;
+    overflow: hidden;
+    width: 0;
+    animation: typing 5.5s steps(40, end) forwards ;
+}
+@keyframes typing {
+    0% { width: 0 }
+
+100% { width: 100% }
+}
+@keyframes blink-caret {
+    0%,100%{ border-color: transparent; display: none;}
+    50% { border-color: #33333300; }
+
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.fade {
+    animation: fade 1.5s ;
+}
+
+@keyframes fade {
+    from { opacity: 0.4 }
+    to { opacity: 1 }
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.roll{
+    border-radius: 2rem;
+    margin-top: 1rem;
+    max-width: 100%;
+    min-width: 80%;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    max-height: 80%;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 100%;
+}
+
+.gallery-item:hover img {
+    transform: scale(0.9);
+}
+.contacter{
+    background-color: #040443; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 20px 30px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    font-size: 20px; /* Increase font size */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 1rem 1rem 10rem rgb(245, 244, 244);
+}
+#digital {
+    font-size: 5rem;
+}
+
+#touchbutton {
+    font-size: 5.5rem;
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+@media (max-width: 600px) {
+    #digital {
+        font-size: 1rem;
+    }
+    #touchbutton {
+        font-size: 2.2rem;
+    }
+    .prev, .next {
+        font-size: 12px;
+        padding: 12px;
+    }
+}
+@media (max-width: 768px) {
+    header #branding, header nav {
+        float: none;
+        text-align: center;
+    }
+    header nav ul {
+        padding: 0;
+    }
+    header nav ul li {
+        display: block;
+        padding: 10px;
+    }
+}
